@@ -9,15 +9,14 @@ venv/
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
-*.npz
 .DS_Store
 data/raw/real/**
 !data/raw/real/.gitkeep
 data/processed/**
 !data/processed/.gitkeep
-checkpoints/*.npz
 checkpoints/*.pt
 !checkpoints/.gitkeep
+!checkpoints/*.npz
 *.mcap
 .isaac/
 wandb/
