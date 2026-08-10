@@ -26,9 +26,11 @@ def test_joint_mapping_count_and_order():
 
 
 def test_mujoco_model_loads_and_matches_mapping():
+    from wuji_r2s2r.sim.mujoco.loader import load_mjmodel
+
     m = JointMapping()
     path = default_mjcf("right")
-    model = mujoco.MjModel.from_xml_path(str(path))
+    model = load_mjmodel(path)
     names = [mujoco.mj_id2name(model, mujoco.mjtObj.mjOBJ_JOINT, i) for i in range(model.njnt)]
     m.validate_against_mjcf_joint_names([n for n in names if n], side="right")
     assert model.nu == 20

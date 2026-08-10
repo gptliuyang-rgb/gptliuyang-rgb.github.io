@@ -13,6 +13,7 @@ from wuji_r2s2r.schema.joint_mapping import JointMapping
 from wuji_r2s2r.schema.types import DOF, HandAction, HandObservation
 from wuji_r2s2r.sim.common.backend import HandBackend
 from wuji_r2s2r.sim.common.factory import default_mjcf
+from wuji_r2s2r.sim.mujoco.loader import load_mjmodel
 
 
 class MuJoCoHand2Backend(HandBackend):
@@ -30,7 +31,8 @@ class MuJoCoHand2Backend(HandBackend):
         path = Path(scene_xml) if scene_xml else Path(model_path) if model_path else default_mjcf(side)
         if not path.exists():
             raise FileNotFoundError(path)
-        self.model = mujoco.MjModel.from_xml_path(str(path))
+        # Use Unicode-safe loader (Windows paths like D:\\下载\\... break from_xml_path).
+        self.model = load_mjmodel(path)
         self.data = mujoco.MjData(self.model)
         self.n_substeps = n_substeps
         self._joint_qpos_adr: list[int] = []
