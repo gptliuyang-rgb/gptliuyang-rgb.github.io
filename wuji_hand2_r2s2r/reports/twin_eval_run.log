@@ -1,0 +1,5 @@
+{
+  "digital_twin_version": "hand2_twin_v0.1",
+  "holdout_mean_q_rmse": 0.01364847781257607,
+  "evidence": "[Simulation verified]"
+}

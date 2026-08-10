@@ -1,0 +1,97 @@
+{
+  "randomization_version": "dr_v0.1",
+  "coverage": [
+    {
+      "parameter": "actuator_delay_ms",
+      "real_estimate": 8.0,
+      "dr_range": [
+        4.0,
+        20.0
+      ],
+      "covered": true
+    },
+    {
+      "parameter": "scanner_mass",
+      "real_estimate": 0.18,
+      "dr_range": [
+        0.14,
+        0.22
+      ],
+      "covered": true
+    },
+    {
+      "parameter": "scanner_handle_friction",
+      "real_estimate": 0.9,
+      "dr_range": [
+        0.6,
+        1.3
+      ],
+      "covered": true
+    },
+    {
+      "parameter": "finger_friction_sliding",
+      "real_estimate": 0.8,
+      "dr_range": [
+        0.5,
+        1.2
+      ],
+      "covered": true
+    }
+  ],
+  "example_samples": [
+    {
+      "randomization_version": "dr_v0.1",
+      "stress": false,
+      "actuator_delay_ms": 14.191386997143269,
+      "joint_damping_scale": 0.9046800706458055,
+      "finger_friction_sliding": 0.5286814667553362,
+      "scanner_mass": 0.14132221084228233,
+      "scanner_handle_friction": 1.1692891674401906,
+      "trigger_stiffness": 75.63777886388608,
+      "joint_zero_offset_rad": 0.004265431030687196,
+      "observation_joint_noise_std": 0.002323741402459996,
+      "action_delay_ms": 9.067124889050497,
+      "camera_delay_ms": 57.402896951510726,
+      "scanner_xy_m": 0.031585355412153224,
+      "scanner_yaw_rad": -0.29835689989791114,
+      "box_xy_m": 0.07148085531751389,
+      "qr_yaw_rad": -0.3731315397556285
+    },
+    {
+      "randomization_version": "dr_v0.1",
+      "stress": false,
+      "actuator_delay_ms": 15.674487142879105,
+      "joint_damping_scale": 0.7634834309038385,
+      "finger_friction_sliding": 1.1042252456449204,
+      "scanner_mass": 0.18331689761992734,
+      "scanner_handle_friction": 0.8097983233761694,
+      "trigger_stiffness": 51.13436105988292,
+      "joint_zero_offset_rad": -0.01886721315418148,
+      "observation_joint_noise_std": 0.0008107081912489099,
+      "action_delay_ms": 10.718117391017195,
+      "camera_delay_ms": 45.88758046297001,
+      "scanner_xy_m": 0.011538511148125388,
+      "scanner_yaw_rad": -0.06979346744286993,
+      "box_xy_m": 0.09944198715784222,
+      "qr_yaw_rad": 0.3846682710209841
+    },
+    {
+      "randomization_version": "dr_v0.1",
+      "stress": false,
+      "actuator_delay_ms": 14.968671751691115,
+      "joint_damping_scale": 1.4756889144017244,
+      "finger_friction_sliding": 0.981912711399658,
+      "scanner_mass": 0.1711137139183283,
+      "scanner_handle_friction": 0.6945675535156879,
+      "trigger_stiffness": 66.07441700970409,
+      "joint_zero_offset_rad": 0.001014172899029036,
+      "observation_joint_noise_std": 0.0012756046888973893,
+      "action_delay_ms": 8.315859664813258,
+      "camera_delay_ms": 55.57951337396001,
+      "scanner_xy_m": 0.043404351595624974,
+      "scanner_yaw_rad": -0.08532288197455787,
+      "box_xy_m": 0.014305966145952184,
+      "qr_yaw_rad": -0.1425044871392463
+    }
+  ]
+}

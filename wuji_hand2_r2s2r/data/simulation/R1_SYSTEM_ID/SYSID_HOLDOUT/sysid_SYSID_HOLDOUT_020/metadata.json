@@ -1,0 +1,21 @@
+{
+  "episode_id": "sysid_SYSID_HOLDOUT_020",
+  "source": "mujoco",
+  "task": "free_space_sine",
+  "dataset_purpose": "R1_SYSTEM_ID",
+  "hardware_version": "hand2_beta1",
+  "firmware_version": "unknown",
+  "simulator_version": "",
+  "simulator_parameters": {},
+  "dataset_version": "v0",
+  "calibration_version": "none",
+  "digital_twin_version": "hand2_twin_v0.1",
+  "randomization_version": "",
+  "git_commit": "",
+  "saved_at": 1786345726.6960578,
+  "labels": {
+    "split": "SYSID_HOLDOUT"
+  },
+  "privileged_keys": [],
+  "extra": {}
+}

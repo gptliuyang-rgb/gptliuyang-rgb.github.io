@@ -1,0 +1,21 @@
+stages:
+  - A_kinematic
+  - B_free_space
+  - C_latency
+  - D_simple_contact
+  - E_scanner_interaction
+split:
+  train: SYSID_TRAIN
+  validation: SYSID_VALIDATION
+  holdout: SYSID_HOLDOUT
+optimizer: optuna
+hierarchical: true
+fit_order:
+  - geometry
+  - joint_offsets
+  - free_space_actuator
+  - delay
+  - damping_friction
+  - finger_contact
+  - scanner_mass_inertia_friction
+  - integrated_grasp

@@ -1,0 +1,7 @@
+{
+  "mujoco_final_q_norm": 0.13598086678635982,
+  "isaaclab_final_q_norm": 0.060491729533094715,
+  "trajectory_disagreement_rmse": 0.018795369231048988,
+  "isaaclab_note": "Isaac Sim not installed; backend uses mock fallback",
+  "evidence": "[Not yet verified] full PhysX cross-sim requires Isaac Lab install"
+}

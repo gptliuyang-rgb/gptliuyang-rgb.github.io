@@ -1,0 +1,14 @@
+version: scanner_nominal_v0.1
+mass: 0.180
+center_of_mass: [0.0, 0.0, 0.05]
+inertia: [0.0004, 0.0005, 0.0002]
+handle_friction: 0.9
+trigger:
+  travel: 0.003
+  stiffness: 50.0
+  threshold: 0.002
+optical:
+  working_distance_min_m: 0.05
+  working_distance_max_m: 0.35
+  max_angle_rad: 0.35
+notes: "Placeholder characterization pending physical measurement. [Not yet verified]"

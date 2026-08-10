@@ -1,0 +1,37 @@
+task: scanner_poc
+curriculum:
+  - T0_finger_motion
+  - T1_close_on_fixed_scanner
+  - T2_pickup
+  - T3_lift
+  - T4_stable_hold
+  - T5_trigger
+  - T6_orient
+  - T7_align_held
+  - T8_acquire_lift_align_trigger
+  - T9_full_task
+state_machine:
+  - READY
+  - LOCATE_SCANNER
+  - APPROACH
+  - PRESHAPE
+  - GRASP
+  - VERIFY_GRASP
+  - LIFT
+  - LOCATE_QR
+  - AIM
+  - TRIGGER
+  - VERIFY_DECODE
+  - SUCCESS
+recovery:
+  GRASP_FAIL: RETRY_GRASP
+  SLIP: REGRASP
+  DECODE_FAIL: SEARCH
+  WRONG_QR: RELOCALIZE
+  COMM_FAULT: SAFE_STOP
+scan_surrogate:
+  distance_min_m: 0.05
+  distance_max_m: 0.35
+  max_angular_error_rad: 0.35
+  require_trigger: true
+  require_line_of_sight: true

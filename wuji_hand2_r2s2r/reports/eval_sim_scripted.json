@@ -1,0 +1,33 @@
+{
+  "policy": "P0_scripted",
+  "n": 5,
+  "proxy_success_rate": 1.0,
+  "rows": [
+    {
+      "episode": 0,
+      "final_phase": "SUCCESS",
+      "proxy_success": true
+    },
+    {
+      "episode": 1,
+      "final_phase": "SUCCESS",
+      "proxy_success": true
+    },
+    {
+      "episode": 2,
+      "final_phase": "SUCCESS",
+      "proxy_success": true
+    },
+    {
+      "episode": 3,
+      "final_phase": "SUCCESS",
+      "proxy_success": true
+    },
+    {
+      "episode": 4,
+      "final_phase": "SUCCESS",
+      "proxy_success": true
+    }
+  ],
+  "evidence": "[Simulation verified] surrogate decode; not physical scanner"
+}

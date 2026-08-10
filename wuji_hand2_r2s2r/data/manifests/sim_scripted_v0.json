@@ -1,0 +1,110 @@
+{
+  "episodes": [
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R2_TELEOP_DEMOS/scripted_v0/sim_scripted_000",
+      "params": {
+        "randomization_version": "dr_v0.1",
+        "stress": false,
+        "actuator_delay_ms": 12.189145995204107,
+        "joint_damping_scale": 1.925695544488903,
+        "finger_friction_sliding": 0.6009117289037436,
+        "scanner_mass": 0.21589195577097953,
+        "scanner_handle_friction": 0.8182820164073399,
+        "trigger_stiffness": 51.16632244862878,
+        "joint_zero_offset_rad": 0.013108103752817669,
+        "observation_joint_noise_std": 0.0015229978409229033,
+        "action_delay_ms": 9.144717939749773,
+        "camera_delay_ms": 21.102364529722735,
+        "scanner_xy_m": 0.02535131086748066,
+        "scanner_yaw_rad": 0.02288598793156693,
+        "box_xy_m": -0.03405365670018157,
+        "qr_yaw_rad": 0.23074296274272343
+      }
+    },
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R2_TELEOP_DEMOS/scripted_v0/sim_scripted_001",
+      "params": {
+        "randomization_version": "dr_v0.1",
+        "stress": false,
+        "actuator_delay_ms": 8.85111726866632,
+        "joint_damping_scale": 1.1802468342209773,
+        "finger_friction_sliding": 0.5938291880730153,
+        "scanner_mass": 0.17224903891577034,
+        "scanner_handle_friction": 0.7424186684733047,
+        "trigger_stiffness": 43.115667022092474,
+        "joint_zero_offset_rad": 0.010014586905202103,
+        "observation_joint_noise_std": 0.0012010218949651,
+        "action_delay_ms": 8.307482667611255,
+        "camera_delay_ms": 59.22948799204954,
+        "scanner_xy_m": 0.046165719366378685,
+        "scanner_yaw_rad": 0.1348739644641202,
+        "box_xy_m": 0.008245371109486838,
+        "qr_yaw_rad": -0.17848703676370337
+      }
+    },
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R2_TELEOP_DEMOS/scripted_v0/sim_scripted_002",
+      "params": {
+        "randomization_version": "dr_v0.1",
+        "stress": false,
+        "actuator_delay_ms": 6.57043214040203,
+        "joint_damping_scale": 1.954888119824199,
+        "finger_friction_sliding": 0.8612480098835151,
+        "scanner_mass": 0.14926924899766164,
+        "scanner_handle_friction": 1.0364428288762504,
+        "trigger_stiffness": 68.8341557171149,
+        "joint_zero_offset_rad": 0.004520132042121618,
+        "observation_joint_noise_std": 0.0027932442619772566,
+        "action_delay_ms": 2.514707396634637,
+        "camera_delay_ms": 41.143570530400865,
+        "scanner_xy_m": -0.004066411711459626,
+        "scanner_yaw_rad": -0.2625902525100746,
+        "box_xy_m": 0.028265633827875003,
+        "qr_yaw_rad": 0.28210627078452544
+      }
+    },
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R2_TELEOP_DEMOS/scripted_v0/sim_scripted_003",
+      "params": {
+        "randomization_version": "dr_v0.1",
+        "stress": false,
+        "actuator_delay_ms": 13.487056289668544,
+        "joint_damping_scale": 0.8901461716058348,
+        "finger_friction_sliding": 1.087917064721986,
+        "scanner_mass": 0.18075967052172076,
+        "scanner_handle_friction": 0.9576222191265731,
+        "trigger_stiffness": 67.65151038510889,
+        "joint_zero_offset_rad": -0.014083118568601737,
+        "observation_joint_noise_std": 0.0025490667977981925,
+        "action_delay_ms": 10.882729778042343,
+        "camera_delay_ms": 51.48387766219204,
+        "scanner_xy_m": -0.03083837409798648,
+        "scanner_yaw_rad": 0.18141849668071802,
+        "box_xy_m": -0.06173521478855995,
+        "qr_yaw_rad": -0.3347579061091899
+      }
+    },
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R2_TELEOP_DEMOS/scripted_v0/sim_scripted_004",
+      "params": {
+        "randomization_version": "dr_v0.1",
+        "stress": false,
+        "actuator_delay_ms": 17.683631588593123,
+        "joint_damping_scale": 1.7919252442665026,
+        "finger_friction_sliding": 1.1135759674916064,
+        "scanner_mass": 0.17775277754870322,
+        "scanner_handle_friction": 0.7918338720296028,
+        "trigger_stiffness": 30.35459143015831,
+        "joint_zero_offset_rad": 0.005828835822997914,
+        "observation_joint_noise_std": 0.0022997734587717326,
+        "action_delay_ms": 12.862399814503565,
+        "camera_delay_ms": 31.275113094581684,
+        "scanner_xy_m": -0.028478183283702642,
+        "scanner_yaw_rad": 0.08359882803995272,
+        "box_xy_m": 0.061010966629001934,
+        "qr_yaw_rad": 0.37093669827597675
+      }
+    }
+  ],
+  "n": 5
+}

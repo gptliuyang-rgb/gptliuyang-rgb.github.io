@@ -1,0 +1,18 @@
+{
+  "mode": "shadow",
+  "mean_policy_vs_exec_l2": 0.0,
+  "gates": {
+    "results": {
+      "G0_sim_smoke": true,
+      "G1_real_action_playback_sim": true,
+      "G3_policy_nominal_mujoco": true
+    },
+    "notes": {
+      "G0_sim_smoke": "software pipeline",
+      "G1_real_action_playback_sim": "software pipeline",
+      "G3_policy_nominal_mujoco": "software pipeline"
+    }
+  },
+  "hardware": "not_connected",
+  "evidence": "[Code verified] shadow path on MuJoCo stand-in"
+}

@@ -1,0 +1,403 @@
+{
+  "digital_twin_version": "hand2_twin_v0.1",
+  "holdout_mean_q_rmse": 0.01364847781257607,
+  "results": [
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R1_SYSTEM_ID/SYSID_TRAIN/sysid_SYSID_TRAIN_000",
+      "qa": {
+        "episode_id": "sysid_SYSID_TRAIN_000",
+        "grade": "A",
+        "checks": {
+          "schema": {
+            "ok": true,
+            "T": 200,
+            "dof": 20
+          },
+          "dead_joints": [],
+          "out_of_limit_joints": [],
+          "timestamps": {
+            "n": 200.0,
+            "mean_dt_ms": 20.0,
+            "median_dt_ms": 20.0,
+            "p95_dt_ms": 20.0,
+            "p99_dt_ms": 20.0,
+            "jitter_ms": 0.0,
+            "max_gap_ms": 20.0,
+            "negative_dt": 0.0,
+            "duplicate_ts": 0.0,
+            "effective_hz": 50.0
+          },
+          "actions": {
+            "shape": [
+              200,
+              20
+            ],
+            "nan": false
+          }
+        },
+        "failures": []
+      },
+      "replay": {
+        "joint_position_RMSE": 0.013572483507325905,
+        "joint_velocity_RMSE": 0.06276916845385748,
+        "trajectory_divergence_time": null,
+        "per_joint_rmse": [
+          0.008071216026481542,
+          0.010889258996549188,
+          0.015227882805102047,
+          0.012221294055679921,
+          0.017084461935536716,
+          0.01098411631665952,
+          0.009079393954471089,
+          0.013653057433342136,
+          0.01833785911224589,
+          0.013255728791029259,
+          0.009776694460478847,
+          0.013068763438289218,
+          0.010639493630292563,
+          0.01413475978177041,
+          0.021679900783531283,
+          0.0072714026572710515,
+          0.011752960287043212,
+          0.01491569554838694,
+          0.01221772877095558,
+          0.01771366313723945
+        ],
+        "T": 200,
+        "backend": "mujoco"
+      },
+      "split": "SYSID_TRAIN"
+    },
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R1_SYSTEM_ID/SYSID_TRAIN/sysid_SYSID_TRAIN_001",
+      "qa": {
+        "episode_id": "sysid_SYSID_TRAIN_001",
+        "grade": "A",
+        "checks": {
+          "schema": {
+            "ok": true,
+            "T": 200,
+            "dof": 20
+          },
+          "dead_joints": [],
+          "out_of_limit_joints": [],
+          "timestamps": {
+            "n": 200.0,
+            "mean_dt_ms": 20.0,
+            "median_dt_ms": 20.0,
+            "p95_dt_ms": 20.0,
+            "p99_dt_ms": 20.0,
+            "jitter_ms": 0.0,
+            "max_gap_ms": 20.0,
+            "negative_dt": 0.0,
+            "duplicate_ts": 0.0,
+            "effective_hz": 50.0
+          },
+          "actions": {
+            "shape": [
+              200,
+              20
+            ],
+            "nan": false
+          }
+        },
+        "failures": []
+      },
+      "replay": {
+        "joint_position_RMSE": 0.013547734505332662,
+        "joint_velocity_RMSE": 0.06235069616807332,
+        "trajectory_divergence_time": null,
+        "per_joint_rmse": [
+          0.008060874649353797,
+          0.011917983648158338,
+          0.015398746374907764,
+          0.012705311105509688,
+          0.01684480350818256,
+          0.01052751605663802,
+          0.009207890673566454,
+          0.013195593743528647,
+          0.017507635626336827,
+          0.01332166804564909,
+          0.009435326911372789,
+          0.013710454219719836,
+          0.011680005429685869,
+          0.014627241223027002,
+          0.020708250779365726,
+          0.007414875439056032,
+          0.011337413121540966,
+          0.014968606795200625,
+          0.012135160905115315,
+          0.017797185601345546
+        ],
+        "T": 200,
+        "backend": "mujoco"
+      },
+      "split": "SYSID_TRAIN"
+    },
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R1_SYSTEM_ID/SYSID_TRAIN/sysid_SYSID_TRAIN_002",
+      "qa": {
+        "episode_id": "sysid_SYSID_TRAIN_002",
+        "grade": "A",
+        "checks": {
+          "schema": {
+            "ok": true,
+            "T": 200,
+            "dof": 20
+          },
+          "dead_joints": [],
+          "out_of_limit_joints": [],
+          "timestamps": {
+            "n": 200.0,
+            "mean_dt_ms": 20.0,
+            "median_dt_ms": 20.0,
+            "p95_dt_ms": 20.0,
+            "p99_dt_ms": 20.0,
+            "jitter_ms": 0.0,
+            "max_gap_ms": 20.0,
+            "negative_dt": 0.0,
+            "duplicate_ts": 0.0,
+            "effective_hz": 50.0
+          },
+          "actions": {
+            "shape": [
+              200,
+              20
+            ],
+            "nan": false
+          }
+        },
+        "failures": []
+      },
+      "replay": {
+        "joint_position_RMSE": 0.013452491083996087,
+        "joint_velocity_RMSE": 0.05963302465450013,
+        "trajectory_divergence_time": null,
+        "per_joint_rmse": [
+          0.00773309046572584,
+          0.01105435282049155,
+          0.016451728888989485,
+          0.012177188378163568,
+          0.01697821866895216,
+          0.010810105656077436,
+          0.008638708394786795,
+          0.012963396733305365,
+          0.017554451206573923,
+          0.01331370222286474,
+          0.00930437810753782,
+          0.013179819967888945,
+          0.010216800281283163,
+          0.014176738394847692,
+          0.0210039771763528,
+          0.007544498723422142,
+          0.011683355722347773,
+          0.014854714436422283,
+          0.012275096320020874,
+          0.017710705572385917
+        ],
+        "T": 200,
+        "backend": "mujoco"
+      },
+      "split": "SYSID_TRAIN"
+    },
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R1_SYSTEM_ID/SYSID_VALIDATION/sysid_SYSID_VALIDATION_010",
+      "qa": {
+        "episode_id": "sysid_SYSID_VALIDATION_010",
+        "grade": "A",
+        "checks": {
+          "schema": {
+            "ok": true,
+            "T": 200,
+            "dof": 20
+          },
+          "dead_joints": [],
+          "out_of_limit_joints": [],
+          "timestamps": {
+            "n": 200.0,
+            "mean_dt_ms": 20.0,
+            "median_dt_ms": 20.0,
+            "p95_dt_ms": 20.0,
+            "p99_dt_ms": 20.0,
+            "jitter_ms": 0.0,
+            "max_gap_ms": 20.0,
+            "negative_dt": 0.0,
+            "duplicate_ts": 0.0,
+            "effective_hz": 50.0
+          },
+          "actions": {
+            "shape": [
+              200,
+              20
+            ],
+            "nan": false
+          }
+        },
+        "failures": []
+      },
+      "replay": {
+        "joint_position_RMSE": 0.01362706541201582,
+        "joint_velocity_RMSE": 0.07130052983147275,
+        "trajectory_divergence_time": null,
+        "per_joint_rmse": [
+          0.008635288330915881,
+          0.010873951700089592,
+          0.016571312049039576,
+          0.012193850744049632,
+          0.017063584056377732,
+          0.010240622509037534,
+          0.009176744370184191,
+          0.01381709685043324,
+          0.01740808257205532,
+          0.012913179774425082,
+          0.009548930614467124,
+          0.013397879954498341,
+          0.011375669512577152,
+          0.01468739106910995,
+          0.021177347782687435,
+          0.007796498842696093,
+          0.011235775923985123,
+          0.015438466657875075,
+          0.012135399354694352,
+          0.017886960658031487
+        ],
+        "T": 200,
+        "backend": "mujoco"
+      },
+      "split": "SYSID_VALIDATION"
+    },
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R1_SYSTEM_ID/SYSID_HOLDOUT/sysid_SYSID_HOLDOUT_020",
+      "qa": {
+        "episode_id": "sysid_SYSID_HOLDOUT_020",
+        "grade": "A",
+        "checks": {
+          "schema": {
+            "ok": true,
+            "T": 200,
+            "dof": 20
+          },
+          "dead_joints": [],
+          "out_of_limit_joints": [],
+          "timestamps": {
+            "n": 200.0,
+            "mean_dt_ms": 20.0,
+            "median_dt_ms": 20.0,
+            "p95_dt_ms": 20.0,
+            "p99_dt_ms": 20.0,
+            "jitter_ms": 0.0,
+            "max_gap_ms": 20.0,
+            "negative_dt": 0.0,
+            "duplicate_ts": 0.0,
+            "effective_hz": 50.0
+          },
+          "actions": {
+            "shape": [
+              200,
+              20
+            ],
+            "nan": false
+          }
+        },
+        "failures": []
+      },
+      "replay": {
+        "joint_position_RMSE": 0.01352971493677529,
+        "joint_velocity_RMSE": 0.06188718508681567,
+        "trajectory_divergence_time": null,
+        "per_joint_rmse": [
+          0.007672204894078001,
+          0.011222936099791442,
+          0.015298915546347073,
+          0.012356607761680722,
+          0.017334221173439125,
+          0.01023336715264801,
+          0.00859363728986666,
+          0.014016182597997065,
+          0.018570259334901144,
+          0.012996440764808895,
+          0.009688090971154133,
+          0.013309858503342573,
+          0.00991814385073162,
+          0.013778756935200224,
+          0.021845961917976754,
+          0.007699902297151709,
+          0.011998235896562827,
+          0.014256582655160843,
+          0.012066673502310051,
+          0.017653866205518016
+        ],
+        "T": 200,
+        "backend": "mujoco"
+      },
+      "split": "SYSID_HOLDOUT"
+    },
+    {
+      "episode": "/workspace/wuji_hand2_r2s2r/data/simulation/R1_SYSTEM_ID/SYSID_HOLDOUT/sysid_SYSID_HOLDOUT_021",
+      "qa": {
+        "episode_id": "sysid_SYSID_HOLDOUT_021",
+        "grade": "A",
+        "checks": {
+          "schema": {
+            "ok": true,
+            "T": 200,
+            "dof": 20
+          },
+          "dead_joints": [],
+          "out_of_limit_joints": [],
+          "timestamps": {
+            "n": 200.0,
+            "mean_dt_ms": 20.0,
+            "median_dt_ms": 20.0,
+            "p95_dt_ms": 20.0,
+            "p99_dt_ms": 20.0,
+            "jitter_ms": 0.0,
+            "max_gap_ms": 20.0,
+            "negative_dt": 0.0,
+            "duplicate_ts": 0.0,
+            "effective_hz": 50.0
+          },
+          "actions": {
+            "shape": [
+              200,
+              20
+            ],
+            "nan": false
+          }
+        },
+        "failures": []
+      },
+      "replay": {
+        "joint_position_RMSE": 0.01376724068837685,
+        "joint_velocity_RMSE": 0.06919729329499595,
+        "trajectory_divergence_time": null,
+        "per_joint_rmse": [
+          0.008450022382625029,
+          0.011464757303043518,
+          0.01635006439559161,
+          0.012198288587981321,
+          0.016927161267584843,
+          0.01106331083828661,
+          0.008828930158403005,
+          0.012960704875296955,
+          0.018659480247790048,
+          0.013416992606138529,
+          0.009442968440305058,
+          0.013943699612198148,
+          0.01162490755057525,
+          0.01389984332479095,
+          0.022335958119134417,
+          0.007622039504159836,
+          0.011318539372640449,
+          0.01433821739872575,
+          0.013235488549972096,
+          0.01763296671912567
+        ],
+        "T": 200,
+        "backend": "mujoco"
+      },
+      "split": "SYSID_HOLDOUT"
+    }
+  ],
+  "evidence": "[Simulation verified]"
+}

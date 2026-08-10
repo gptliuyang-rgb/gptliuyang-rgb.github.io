@@ -1,0 +1,23 @@
+grades:
+  A:
+    description: clean training-grade
+    max_drop_rate: 0.01
+    max_jitter_ms: 5
+    allow_nan: false
+  B:
+    description: usable with minor issues
+    max_drop_rate: 0.05
+    max_jitter_ms: 15
+    allow_nan: false
+  C:
+    description: diagnostics/failure-learning only
+    max_drop_rate: 0.2
+    max_jitter_ms: 50
+    allow_nan: false
+  REJECT:
+    description: structurally unusable
+weights:
+  A: 1.0
+  B: 0.5
+  C: 0.0
+  REJECT: 0.0

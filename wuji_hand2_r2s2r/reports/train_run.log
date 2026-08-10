@@ -1,0 +1,6 @@
+{
+  "family": "P2_sim_bc",
+  "train_rmse": 0.0052856193212051875,
+  "n_samples": 1500,
+  "checkpoint": "/workspace/wuji_hand2_r2s2r/checkpoints/scanner_bc_v0.npz"
+}

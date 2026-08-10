@@ -1,0 +1,38 @@
+[
+  {
+    "parameter": "actuator_delay_ms",
+    "real_estimate": 8.0,
+    "dr_range": [
+      4.0,
+      20.0
+    ],
+    "covered": true
+  },
+  {
+    "parameter": "scanner_mass",
+    "real_estimate": 0.18,
+    "dr_range": [
+      0.14,
+      0.22
+    ],
+    "covered": true
+  },
+  {
+    "parameter": "scanner_handle_friction",
+    "real_estimate": 0.9,
+    "dr_range": [
+      0.6,
+      1.3
+    ],
+    "covered": true
+  },
+  {
+    "parameter": "finger_friction_sliding",
+    "real_estimate": 0.8,
+    "dr_range": [
+      0.5,
+      1.2
+    ],
+    "covered": true
+  }
+]
