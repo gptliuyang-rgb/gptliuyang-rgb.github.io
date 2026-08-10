@@ -1,0 +1,21 @@
+{
+  "allowed_full_poc": false,
+  "gates": {
+    "results": {
+      "G0_sim_smoke": true,
+      "G1_real_action_playback_sim": true,
+      "G2_real_holdout_replay": true,
+      "G3_policy_nominal_mujoco": true,
+      "G4_policy_randomized_mujoco": true
+    },
+    "notes": {
+      "G0_sim_smoke": "see reports/",
+      "G1_real_action_playback_sim": "see reports/",
+      "G2_real_holdout_replay": "see reports/",
+      "G3_policy_nominal_mujoco": "see reports/",
+      "G4_policy_randomized_mujoco": "see reports/"
+    }
+  },
+  "message": "Physical scanner PoC blocked until real hardware gates G6\u2013G9 pass",
+  "evidence": "[Not yet verified] physical deployment"
+}

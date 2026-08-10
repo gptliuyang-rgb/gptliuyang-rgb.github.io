@@ -1,0 +1,9 @@
+backend: mujoco
+side: right
+hand_mjcf: assets/wuji_hand2/mjcf/right.xml
+scene_mjcf: assets/scanner/scanner_scene_right.xml
+physics_dt: 0.002
+control_dt: 0.02
+camera_dt: 0.033
+policy_dt: 0.02
+digital_twin_version: hand2_twin_v0.1

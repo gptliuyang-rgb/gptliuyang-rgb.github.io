@@ -1,0 +1,39 @@
+{
+  "episode_id": "sim_scripted_004",
+  "source": "mujoco",
+  "task": "scanner_T0_T5",
+  "dataset_purpose": "R2_TELEOP_DEMOS",
+  "hardware_version": "hand2_beta1",
+  "firmware_version": "unknown",
+  "simulator_version": "",
+  "simulator_parameters": {
+    "randomization_version": "dr_v0.1",
+    "stress": false,
+    "actuator_delay_ms": 17.683631588593123,
+    "joint_damping_scale": 1.7919252442665026,
+    "finger_friction_sliding": 1.1135759674916064,
+    "scanner_mass": 0.17775277754870322,
+    "scanner_handle_friction": 0.7918338720296028,
+    "trigger_stiffness": 30.35459143015831,
+    "joint_zero_offset_rad": 0.005828835822997914,
+    "observation_joint_noise_std": 0.0022997734587717326,
+    "action_delay_ms": 12.862399814503565,
+    "camera_delay_ms": 31.275113094581684,
+    "scanner_xy_m": -0.028478183283702642,
+    "scanner_yaw_rad": 0.08359882803995272,
+    "box_xy_m": 0.061010966629001934,
+    "qr_yaw_rad": 0.37093669827597675
+  },
+  "dataset_version": "v0",
+  "calibration_version": "none",
+  "digital_twin_version": "hand2_twin_v0.1",
+  "randomization_version": "dr_v0.1",
+  "git_commit": "",
+  "saved_at": 1786345729.7553692,
+  "labels": {
+    "phase_final": "SUCCESS",
+    "success": true
+  },
+  "privileged_keys": [],
+  "extra": {}
+}

@@ -1,0 +1,335 @@
+# Canonical joint mapping for Wuji Hand 2 (Beta 1)
+# Source: official MJCF hand2/hand2_beta1/body/mjcf/{left,right}.xml
+# SDK: finger(i).joint(j) with i in [0..4], j in [0..3]
+# Evidence: [Official-doc verified] docs.wuji.tech + wuji-description
+
+hand_revision: hand2_beta1
+dof: 20
+units: radian
+base_frame: "{side}_wrist"  # r_wrist / l_wrist
+convention: anatomical_names_frozen_at_beta1
+
+# Canonical order used everywhere: training, real, MuJoCo, Isaac
+# Index = finger * 4 + joint_within_finger
+canonical_joints:
+  - index: 0
+    name: thumb_cmc_flex
+    finger: 0
+    finger_name: thumb
+    joint_in_finger: 0
+    sdk_finger: 0
+    sdk_joint: 0
+    mjcf_right: r_thumb_cmc_flex
+    mjcf_left: l_thumb_cmc_flex
+    actuator_right: r_THJ0
+    actuator_left: l_THJ0
+    axis: [1, 0, 0]
+    limit_lower: -1.187
+    limit_upper: 1.291
+    effort_limit: 0.6
+  - index: 1
+    name: thumb_cmc_abd
+    finger: 0
+    finger_name: thumb
+    joint_in_finger: 1
+    sdk_finger: 0
+    sdk_joint: 1
+    mjcf_right: r_thumb_cmc_abd
+    mjcf_left: l_thumb_cmc_abd
+    actuator_right: r_THJ1
+    actuator_left: l_THJ1
+    axis: [0, 1, 0]
+    limit_lower: -1.484
+    limit_upper: 0.698
+    effort_limit: 0.6
+  - index: 2
+    name: thumb_mcp
+    finger: 0
+    finger_name: thumb
+    joint_in_finger: 2
+    sdk_finger: 0
+    sdk_joint: 2
+    mjcf_right: r_thumb_mcp
+    mjcf_left: l_thumb_mcp
+    actuator_right: r_THJ2
+    actuator_left: l_THJ2
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 1.570
+    effort_limit: 0.3
+  - index: 3
+    name: thumb_ip
+    finger: 0
+    finger_name: thumb
+    joint_in_finger: 3
+    sdk_finger: 0
+    sdk_joint: 3
+    mjcf_right: r_thumb_ip
+    mjcf_left: l_thumb_ip
+    actuator_right: r_THJ3
+    actuator_left: l_THJ3
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 1.570
+    effort_limit: 0.3
+  - index: 4
+    name: index_finger_mcp_flex
+    finger: 1
+    finger_name: index
+    joint_in_finger: 0
+    sdk_finger: 1
+    sdk_joint: 0
+    mjcf_right: r_index_finger_mcp_flex
+    mjcf_left: l_index_finger_mcp_flex
+    actuator_right: r_FFJ0
+    actuator_left: l_FFJ0
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 1.570
+    effort_limit: 2.0
+  - index: 5
+    name: index_finger_mcp_abd
+    finger: 1
+    finger_name: index
+    joint_in_finger: 1
+    sdk_finger: 1
+    sdk_joint: 1
+    mjcf_right: r_index_finger_mcp_abd
+    mjcf_left: l_index_finger_mcp_abd
+    actuator_right: r_FFJ1
+    actuator_left: l_FFJ1
+    axis: [0, 1, 0]
+    limit_lower: -0.698
+    limit_upper: 0.698
+    effort_limit: 0.2
+  - index: 6
+    name: index_finger_pip
+    finger: 1
+    finger_name: index
+    joint_in_finger: 2
+    sdk_finger: 1
+    sdk_joint: 2
+    mjcf_right: r_index_finger_pip
+    mjcf_left: l_index_finger_pip
+    actuator_right: r_FFJ2
+    actuator_left: l_FFJ2
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 2.094
+    effort_limit: 0.3
+  - index: 7
+    name: index_finger_dip
+    finger: 1
+    finger_name: index
+    joint_in_finger: 3
+    sdk_finger: 1
+    sdk_joint: 3
+    mjcf_right: r_index_finger_dip
+    mjcf_left: l_index_finger_dip
+    actuator_right: r_FFJ3
+    actuator_left: l_FFJ3
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 1.570
+    effort_limit: 0.3
+  - index: 8
+    name: middle_finger_mcp_flex
+    finger: 2
+    finger_name: middle
+    joint_in_finger: 0
+    sdk_finger: 2
+    sdk_joint: 0
+    mjcf_right: r_middle_finger_mcp_flex
+    mjcf_left: l_middle_finger_mcp_flex
+    actuator_right: r_MFJ0
+    actuator_left: l_MFJ0
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 1.570
+    effort_limit: 2.0
+  - index: 9
+    name: middle_finger_mcp_abd
+    finger: 2
+    finger_name: middle
+    joint_in_finger: 1
+    sdk_finger: 2
+    sdk_joint: 1
+    mjcf_right: r_middle_finger_mcp_abd
+    mjcf_left: l_middle_finger_mcp_abd
+    actuator_right: r_MFJ1
+    actuator_left: l_MFJ1
+    axis: [0, 1, 0]
+    limit_lower: -0.698
+    limit_upper: 0.698
+    effort_limit: 0.2
+  - index: 10
+    name: middle_finger_pip
+    finger: 2
+    finger_name: middle
+    joint_in_finger: 2
+    sdk_finger: 2
+    sdk_joint: 2
+    mjcf_right: r_middle_finger_pip
+    mjcf_left: l_middle_finger_pip
+    actuator_right: r_MFJ2
+    actuator_left: l_MFJ2
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 2.094
+    effort_limit: 0.3
+  - index: 11
+    name: middle_finger_dip
+    finger: 2
+    finger_name: middle
+    joint_in_finger: 3
+    sdk_finger: 2
+    sdk_joint: 3
+    mjcf_right: r_middle_finger_dip
+    mjcf_left: l_middle_finger_dip
+    actuator_right: r_MFJ3
+    actuator_left: l_MFJ3
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 1.570
+    effort_limit: 0.3
+  - index: 12
+    name: ring_finger_mcp_flex
+    finger: 3
+    finger_name: ring
+    joint_in_finger: 0
+    sdk_finger: 3
+    sdk_joint: 0
+    mjcf_right: r_ring_finger_mcp_flex
+    mjcf_left: l_ring_finger_mcp_flex
+    actuator_right: r_RFJ0
+    actuator_left: l_RFJ0
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 1.570
+    effort_limit: 2.0
+  - index: 13
+    name: ring_finger_mcp_abd
+    finger: 3
+    finger_name: ring
+    joint_in_finger: 1
+    sdk_finger: 3
+    sdk_joint: 1
+    mjcf_right: r_ring_finger_mcp_abd
+    mjcf_left: l_ring_finger_mcp_abd
+    actuator_right: r_RFJ1
+    actuator_left: l_RFJ1
+    axis: [0, 1, 0]
+    limit_lower: -0.698
+    limit_upper: 0.698
+    effort_limit: 0.2
+  - index: 14
+    name: ring_finger_pip
+    finger: 3
+    finger_name: ring
+    joint_in_finger: 2
+    sdk_finger: 3
+    sdk_joint: 2
+    mjcf_right: r_ring_finger_pip
+    mjcf_left: l_ring_finger_pip
+    actuator_right: r_RFJ2
+    actuator_left: l_RFJ2
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 2.094
+    effort_limit: 0.3
+  - index: 15
+    name: ring_finger_dip
+    finger: 3
+    finger_name: ring
+    joint_in_finger: 3
+    sdk_finger: 3
+    sdk_joint: 3
+    mjcf_right: r_ring_finger_dip
+    mjcf_left: l_ring_finger_dip
+    actuator_right: r_RFJ3
+    actuator_left: l_RFJ3
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 1.570
+    effort_limit: 0.3
+  - index: 16
+    name: pinky_mcp_flex
+    finger: 4
+    finger_name: pinky
+    joint_in_finger: 0
+    sdk_finger: 4
+    sdk_joint: 0
+    mjcf_right: r_pinky_mcp_flex
+    mjcf_left: l_pinky_mcp_flex
+    actuator_right: r_LFJ0
+    actuator_left: l_LFJ0
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 1.570
+    effort_limit: 2.0
+  - index: 17
+    name: pinky_mcp_abd
+    finger: 4
+    finger_name: pinky
+    joint_in_finger: 1
+    sdk_finger: 4
+    sdk_joint: 1
+    mjcf_right: r_pinky_mcp_abd
+    mjcf_left: l_pinky_mcp_abd
+    actuator_right: r_LFJ1
+    actuator_left: l_LFJ1
+    axis: [0, 1, 0]
+    limit_lower: -0.698
+    limit_upper: 0.698
+    effort_limit: 0.2
+  - index: 18
+    name: pinky_pip
+    finger: 4
+    finger_name: pinky
+    joint_in_finger: 2
+    sdk_finger: 4
+    sdk_joint: 2
+    mjcf_right: r_pinky_pip
+    mjcf_left: l_pinky_pip
+    actuator_right: r_LFJ2
+    actuator_left: l_LFJ2
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 2.094
+    effort_limit: 0.3
+  - index: 19
+    name: pinky_dip
+    finger: 4
+    finger_name: pinky
+    joint_in_finger: 3
+    sdk_finger: 4
+    sdk_joint: 3
+    mjcf_right: r_pinky_dip
+    mjcf_left: l_pinky_dip
+    actuator_right: r_LFJ3
+    actuator_left: l_LFJ3
+    axis: [1, 0, 0]
+    limit_lower: -1.047
+    limit_upper: 1.570
+    effort_limit: 0.3
+
+fingertip_sites:
+  right:
+    - r_thumb_tip
+    - r_index_finger_tip
+    - r_middle_finger_tip
+    - r_ring_finger_tip
+    - r_pinky_tip
+  left:
+    - l_thumb_tip
+    - l_index_finger_tip
+    - l_middle_finger_tip
+    - l_ring_finger_tip
+    - l_pinky_tip
+
+hardware_notes:
+  beta1_tactile: false  # Fingertip tactile not on Beta 1; Beta 2+
+  soft_body_sim_model: false  # Not provided for Beta 1 yet
+  control_frequency_hz: 1000
+  control_mode: MIT_force_position_hybrid
+  evidence: "[Official-doc verified] usage-constraints"

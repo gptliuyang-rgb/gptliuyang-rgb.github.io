@@ -1,0 +1,22 @@
+version: obs_contract_v0.1
+required:
+  - hand.q          # shape (20,), radians, canonical joint order
+  - hand.dq         # shape (20,), rad/s
+  - previous_action # shape (20,), last commanded position targets
+optional:
+  - hand.effort
+  - wrist_camera.rgb
+  - front_camera.rgb
+  - arm.q
+  - arm.dq
+  - scanner.decode_success
+  - scanner.decode_payload
+forbidden_privileged:
+  - simulator.object_ground_truth
+  - simulator.contact_force
+  - simulator.friction
+  - simulator.physics_parameters
+  - simulator.perfect_scanner_pose
+notes:
+  beta1_tactile: "Do not require fingertip tactile; Beta 1 hardware has none."
+  deployable_only: true

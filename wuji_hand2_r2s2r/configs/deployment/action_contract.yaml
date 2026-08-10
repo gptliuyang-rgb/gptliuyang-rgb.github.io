@@ -1,0 +1,23 @@
+version: action_contract_v0.1
+dimension: 20
+joint_ordering: canonical  # configs/hardware/joint_mapping.yaml
+units: radian
+control_mode: position_target
+control_frequency_hz: 50  # policy rate; low-level hand loop is 1000 Hz
+range:
+  source: joint_mapping.limits
+rate_limit_rad_per_s: 4.0
+filtering:
+  type: none  # optional low-pass later
+safety:
+  clamp_to_limits: true
+  reject_nan: true
+  reject_inf: true
+  max_delta_per_step: 0.2
+backends:
+  - real
+  - mujoco
+  - mjwarp
+  - isaaclab
+  - replay
+  - mock

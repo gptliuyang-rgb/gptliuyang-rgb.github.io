@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wuji-r2s2r"
+version = "0.1.0"
+description = "Wuji Hand 2 Real2Sim2Real platform for dexterous manipulation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Wuji Hand 2 R2S2R Platform" }]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.11",
+  "pyyaml>=6.0",
+  "pydantic>=2.0",
+  "mujoco>=3.1",
+  "matplotlib>=3.8",
+  "optuna>=3.5",
+  "rich>=13.0",
+  "opencv-python-headless>=4.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov>=4.1", "ruff>=0.3"]
+mjx = ["jax>=0.4", "jaxlib>=0.4"]
+isaac = []  # Install Isaac Lab / Isaac Sim separately per NVIDIA docs
+
+[project.scripts]
+# Prefer scripts/*.py entrypoints; console scripts optional
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

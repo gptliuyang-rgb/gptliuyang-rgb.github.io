@@ -1,0 +1,25 @@
+version: dr_v0.1
+philosophy: id_derived_with_safety_margin
+digital_twin_version: hand2_twin_v0.1
+type: id_derived  # keep separate from stress_test
+
+ranges:
+  actuator_delay_ms: [4.0, 20.0]
+  joint_damping_scale: [0.5, 2.0]
+  finger_friction_sliding: [0.5, 1.2]
+  scanner_mass: [0.140, 0.220]
+  scanner_handle_friction: [0.6, 1.3]
+  trigger_stiffness: [30.0, 80.0]
+  joint_zero_offset_rad: [-0.02, 0.02]
+  observation_joint_noise_std: [0.0005, 0.003]
+  action_delay_ms: [2.0, 15.0]
+  camera_delay_ms: [20.0, 60.0]
+  scanner_xy_m: [-0.05, 0.05]
+  scanner_yaw_rad: [-0.3, 0.3]
+  box_xy_m: [-0.10, 0.10]
+  qr_yaw_rad: [-0.4, 0.4]
+
+stress_test_ranges:
+  note: "Do not mix into nominal training without labeling"
+  finger_friction_sliding: [0.2, 2.0]
+  actuator_delay_ms: [0.0, 40.0]

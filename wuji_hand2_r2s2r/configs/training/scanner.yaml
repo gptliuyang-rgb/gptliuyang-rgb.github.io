@@ -1,0 +1,15 @@
+experiment: scanner_poc_p0_scripted
+policy_family: P0_scripted
+observation_contract: configs/deployment/observation_contract.yaml
+action_contract: configs/deployment/action_contract.yaml
+digital_twin_version: hand2_twin_v0.1
+randomization_version: dr_v0.1
+backend: mujoco
+seed: 0
+mix_ratios:
+  real: 0.0
+  sim: 1.0
+quality_weights:
+  A: 1.0
+  B: 0.5
+  C: 0.0

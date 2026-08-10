@@ -1,0 +1,174 @@
+[
+  {
+    "backend": "mujoco",
+    "n_envs": 1,
+    "n_steps_per_env": 200,
+    "startup_s": 0.19394909699997243,
+    "elapsed_s": 0.01360322499999711,
+    "steps_per_sec": 14702.395939201366,
+    "diagnostics": {
+      "backend": "mujoco",
+      "side": "right",
+      "nq": 20,
+      "nv": 20,
+      "nu": 20,
+      "timestep": 0.002,
+      "ncon": 0,
+      "steps": 200
+    }
+  },
+  {
+    "backend": "mujoco",
+    "n_envs": 16,
+    "n_steps_per_env": 50,
+    "startup_s": 0.7364736089999724,
+    "elapsed_s": 0.05997773199999301,
+    "steps_per_sec": 13338.283614993865,
+    "diagnostics": {
+      "backend": "mujoco",
+      "side": "right",
+      "nq": 20,
+      "nv": 20,
+      "nu": 20,
+      "timestep": 0.002,
+      "ncon": 0,
+      "steps": 50
+    }
+  },
+  {
+    "backend": "mjx",
+    "n_envs": 1,
+    "n_steps_per_env": 200,
+    "startup_s": 0.026514821000091615,
+    "elapsed_s": 0.013469151999970563,
+    "steps_per_sec": 14848.744746546561,
+    "diagnostics": {
+      "backend": "mjx",
+      "side": "right",
+      "nq": 20,
+      "nv": 20,
+      "nu": 20,
+      "timestep": 0.002,
+      "ncon": 0,
+      "steps": 200,
+      "mjx_mode": "fallback_cpu:ModuleNotFoundError"
+    }
+  },
+  {
+    "backend": "mjx",
+    "n_envs": 16,
+    "n_steps_per_env": 50,
+    "startup_s": 0.4539434149999124,
+    "elapsed_s": 0.05958841299991491,
+    "steps_per_sec": 13425.428866533875,
+    "diagnostics": {
+      "backend": "mjx",
+      "side": "right",
+      "nq": 20,
+      "nv": 20,
+      "nu": 20,
+      "timestep": 0.002,
+      "ncon": 0,
+      "steps": 50,
+      "mjx_mode": "fallback_cpu:ModuleNotFoundError"
+    }
+  },
+  {
+    "backend": "mjwarp",
+    "n_envs": 1,
+    "n_steps_per_env": 200,
+    "startup_s": 0.025382681999985834,
+    "elapsed_s": 0.013541033000024072,
+    "steps_per_sec": 14769.921910658106,
+    "diagnostics": {
+      "backend": "mjwarp",
+      "side": "right",
+      "nq": 20,
+      "nv": 20,
+      "nu": 20,
+      "timestep": 0.002,
+      "ncon": 0,
+      "steps": 200,
+      "warp_available": false,
+      "note": "Warp package optional; CPU MuJoCo used for single-env fidelity"
+    }
+  },
+  {
+    "backend": "mjwarp",
+    "n_envs": 16,
+    "n_steps_per_env": 50,
+    "startup_s": 0.45710459299994,
+    "elapsed_s": 0.05996847500000513,
+    "steps_per_sec": 13340.342571658386,
+    "diagnostics": {
+      "backend": "mjwarp",
+      "side": "right",
+      "nq": 20,
+      "nv": 20,
+      "nu": 20,
+      "timestep": 0.002,
+      "ncon": 0,
+      "steps": 50,
+      "warp_available": false,
+      "note": "Warp package optional; CPU MuJoCo used for single-env fidelity"
+    }
+  },
+  {
+    "backend": "isaaclab",
+    "n_envs": 1,
+    "n_steps_per_env": 200,
+    "startup_s": 0.012779281000007359,
+    "elapsed_s": 0.0009944759999598318,
+    "steps_per_sec": 201110.936823089,
+    "diagnostics": {
+      "backend": "isaaclab",
+      "side": "right",
+      "steps": 200,
+      "isaaclab_available": false,
+      "reason": "No module named 'isaaclab'",
+      "usd_asset": "assets/wuji_hand2/usd/{side}/wujihand2.usd"
+    }
+  },
+  {
+    "backend": "isaaclab",
+    "n_envs": 16,
+    "n_steps_per_env": 50,
+    "startup_s": 0.18736592000004748,
+    "elapsed_s": 0.003586650999977792,
+    "steps_per_sec": 223049.30142490962,
+    "diagnostics": {
+      "backend": "isaaclab",
+      "side": "right",
+      "steps": 50,
+      "isaaclab_available": false,
+      "reason": "No module named 'isaaclab'",
+      "usd_asset": "assets/wuji_hand2/usd/{side}/wujihand2.usd"
+    }
+  },
+  {
+    "backend": "mock",
+    "n_envs": 1,
+    "n_steps_per_env": 200,
+    "startup_s": 0.010837027999968996,
+    "elapsed_s": 0.0008970620000354756,
+    "steps_per_sec": 222950.0302009122,
+    "diagnostics": {
+      "backend": "mock",
+      "side": "right",
+      "steps": 200
+    }
+  },
+  {
+    "backend": "mock",
+    "n_envs": 16,
+    "n_steps_per_env": 50,
+    "startup_s": 0.17639054199992188,
+    "elapsed_s": 0.0035555059999978766,
+    "steps_per_sec": 225003.13598134211,
+    "diagnostics": {
+      "backend": "mock",
+      "side": "right",
+      "steps": 50
+    }
+  }
+]
