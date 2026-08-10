@@ -29,7 +29,13 @@ from wuji_r2s2r.policies.scripted_scanner import ScriptedScannerPolicy
 from wuji_r2s2r.recording.episode_io import load_episode
 from wuji_r2s2r.schema.joint_mapping import JointMapping
 from wuji_r2s2r.schema.types import HandObservation
-from wuji_r2s2r.sim.mujoco.loader import load_mjmodel
+
+try:
+    from wuji_r2s2r.sim.mujoco.loader import load_mjmodel
+except ModuleNotFoundError:
+    # Older local checkouts may not include loader.py yet.
+    def load_mjmodel(xml_path: str | Path) -> mujoco.MjModel:
+        return mujoco.MjModel.from_xml_path(str(Path(xml_path).resolve()))
 
 
 class LinearBCPolicy:
